@@ -1,14 +1,14 @@
 import styles from "./MenuBar.module.css";
 import CompanyLogo from "../../assets/company-logo.png";
 import NavIcon from "../NavIcon/NavIcon";
-import DashboardIcon from "../../assets/Dashboard-icon.svg";
-import RecruitmentIcon from "../../assets/Recruitment-icon.svg";
+import DashboardIcon from "src/assets/Dashboard-icon.svg";
+import RecruitmentIcon from "src/assets/Recruitment-icon.svg";
 import ScheduleIcon from "src/assets/Schedule-icon.svg";
-import EmployeeIcon from "../../assets/Employee-icon.svg";
-import DepartmentIcon from "../../assets/Department-icon.svg";
-import SupportIcon from "../../assets/Support-icon.svg";
-import SettingsIcon from "../../assets/Setting-icon.svg";
-import TabCompanyLogo from '../../assets/tab-logo.png'
+import EmployeeIcon from "src/assets/Employee-icon.svg";
+import DepartmentIcon from "src/assets/Department-icon.svg";
+import SupportIcon from "src/assets/Support-icon.svg";
+import SettingsIcon from "src/assets/Setting-icon.svg";
+import TabCompanyLogo from 'src/assets/tab-logo.png'
 
 
 const MenuBar = ({toggleMenu}) => {
