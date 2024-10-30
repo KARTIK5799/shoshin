@@ -1,0 +1,86 @@
+.dashboardSection {
+    overflow: hidden;
+    padding: 5rem 5rem 0 17%;
+}
+
+.mainDashboard {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 1rem;
+
+}
+
+.rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.coloredCards {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.chartCards {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+@media (max-width: 1024px) {
+    .mainDashboard {
+        flex-direction: column; 
+    }
+    
+    .leftSide {
+        width: 100%; 
+    }
+
+    .rightSide {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) { 
+    
+    
+    .mainDashboard {
+        margin-top: 10%;
+        flex-direction: column;
+        width: 100vw;
+        align-items: center;
+    }
+    .dashboardSection {
+        padding: 0;
+    }
+
+    .leftSide,
+    .rightSide {
+        width: 90%; 
+    }
+
+    .coloredCards,
+    .chartCards {
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+
+   
+    .announcementSection,
+    .activitySection,
+    .scheduleSection {
+        width: 100%;
+    }
+}

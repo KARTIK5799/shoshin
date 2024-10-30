@@ -1,0 +1,167 @@
+.navSection{
+position: fixed;
+display: flex;
+
+}
+.menuBarSec{
+display: block;
+}
+.menuSection{
+    display: none;
+}
+.navBar {
+    position: relative;
+    width: 85vw;
+ 
+    background: white;
+    height: 4rem;
+    border-bottom: 0.2px solid rgb(196, 196, 196, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.rightNavSec{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.leftNavSec{
+    display: flex;
+    gap: 2rem;
+    align-content: center;
+    justify-content: center;
+}
+.profileSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.profileSec p{
+    display: block;
+}
+.mobileNavSearch{
+    display: none;
+}
+.searchBox{
+    width: 15.3rem;
+    height: 2.25rem;
+    padding: 0px 10px;
+    gap: 0px;
+    border-radius: 4px ;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0px;
+    border: 1px solid rgb(196, 196, 196, 0.5);
+}
+
+.searchInput{
+    border: none;
+    background:transparent;
+    display: block;
+}
+.searchInput:focus{
+outline: none;
+}
+.profileDrawer {
+    position: absolute;
+    background: white;
+    height: auto;
+    width: 15rem; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    top: 4rem;
+    right: 2rem; 
+    display: block; 
+    border-radius: 4px;
+}
+.mobileSearchIcon{
+    display: none;
+}
+
+
+.profileDrawer li{
+    list-style: none;
+    cursor: pointer;
+    padding: 1rem 1rem;
+}
+.profileDrawer li:hover{
+    background: rgb(232, 232, 232);
+    
+}
+@media (max-width: 1024px) {
+    .navBar {
+        margin: 0;
+    }
+    .profileSec p{
+        display: none;
+    }
+    .profileSec{
+        gap: 0.5rem;
+    }
+    .leftNavSec{
+        gap: 1rem;
+    }
+    .rightNavSec{
+        gap: 1rem;
+    }
+    .menuSection{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .menuSection{
+        display: block;
+    }
+    .leftNavSec{
+        gap: 0.5rem;
+    }
+    .rightNavSec{
+        gap: 0.5rem;
+    }
+    .searchBox{
+        display: none;
+    }
+    .mobileSearchIcon{
+        display: block;
+    }
+    .mobileNavSearch{
+        display: block;
+        width: 10.3rem;
+        height: 2rem;
+        padding: 0px 5px;
+        border-radius: 4px;
+        gap: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgb(196, 196, 196, 0.5);
+        
+    }
+    .navBar{
+        width: 100vw;
+    }
+   .mobileSearchHidden{
+border: none;
+    }
+    .mobileNavSearch input{
+        background: transparent;
+        border: none;
+        width: 80%;
+        
+    }
+    .mobileNavSearch input:focus{
+    outline: none; 
+    
+    }
+    .profileDrawer{
+        right: 0.5rem;
+    }
+    .menuBarSec{
+        display: none;
+        }
+}

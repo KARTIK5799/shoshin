@@ -1,0 +1,21 @@
+.iconButton {
+  background: none; 
+  border: none; 
+  cursor: pointer;
+  display: flex; 
+  align-items: center; 
+}
+
+.menuIcon {
+  
+  width: 24px; 
+  height: 24px; 
+}
+
+.activeIcon img {
+  filter: hue-rotate(0deg) brightness(0) saturate(100%) invert(25%) sepia(90%) saturate(1746%) hue-rotate(0deg) brightness(104%) contrast(95%); /* Adjust the color to red */
+}
+@media (max-width: 1024px) {
+
+}
+

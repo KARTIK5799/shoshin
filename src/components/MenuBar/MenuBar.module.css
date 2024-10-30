@@ -1,0 +1,120 @@
+.menuBar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;                      
+  height: 100vh;
+  background-color: #f9f8f8;
+  border-right: 0.2px solid rgba(196, 196, 196, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+  height: 10%;
+}
+
+.logo, .tabLogo {
+  width: 100%;
+  height: auto;
+}
+
+.tabLogo {
+  display: none;
+}
+
+.menuSection {
+  margin-bottom: 30px;
+  color: gray;
+}
+
+.menuSection h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+}
+
+.menuList li {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+.menuList li:hover {
+  background-color: #f0f0f0;
+}
+
+.menuListTitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.close {
+  color: gray;
+  position: absolute;
+  right: 1rem;
+  top: 0.4rem;
+  display: none;
+}
+.close:hover{
+  background-color: rgb(219, 219, 219);
+  padding: 1px;
+}
+
+@media (max-width: 1024px) {
+  .menuBar {
+    width: 5rem;
+  }
+
+  .menuSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menuListTitle {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .tabLogo {
+    display: block;
+  }
+
+  .menuSection > h3 {
+    font-size: 10px;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabLogo {
+    display: none;
+  }
+  .close {
+    display: block;
+  }
+  .menuBar {
+    position: absolute;
+    width: 90%;
+    align-items: center;
+  }
+
+  .menuListTitle, .logo {
+    display: block;
+  }
+}
