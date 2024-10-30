@@ -15,7 +15,7 @@ const MenuBar = ({toggleMenu}) => {
   return (
     <div className={styles.menuBar}>
       <div className={styles.close} onClick={toggleMenu}>
-        X
+     close
       </div>
       <div className={styles.logoContainer}>
         <img src={CompanyLogo} alt="Company Logo" className={styles.logo} />

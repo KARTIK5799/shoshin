@@ -9,6 +9,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 }
 
 .logoContainer {
@@ -65,11 +66,9 @@
   right: 1rem;
   top: 0.4rem;
   display: none;
+  z-index: 1000;
 }
-.close:hover{
-  background-color: rgb(219, 219, 219);
-  padding: 1px;
-}
+
 
 @media (max-width: 1024px) {
   .menuBar {

@@ -1,7 +1,7 @@
 .navSection{
 position: fixed;
 display: flex;
-
+z-index: 900;
 }
 .menuBarSec{
 display: block;
