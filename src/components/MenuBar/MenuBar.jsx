@@ -4,7 +4,7 @@ import NavIcon from "../NavIcon/NavIcon";
 import DashboardIcon from "../../assets/Dashboard-icon.svg";
 import RecruitmentIcon from "../../assets/Recruitment-icon.svg";
 import ScheduleIcon from "../../assets/Schedule-Icon.svg";
-import EmployeeIcon from "../../assets/Employee-icon.svg" ;
+// import EmployeeIcon from "../../assets/Employee-icon.svg" ;
 import DepartmentIcon from "../../assets/Department-icon.svg";
 import SupportIcon from "../../assets/Support-Icon.svg";
 import SettingsIcon from "../../assets/Setting-Icon.svg";
@@ -38,7 +38,7 @@ const MenuBar = ({toggleMenu}) => {
             <h2 className={styles.menuListTitle}> Schedule</h2>{" "}
           </li>
           <li>
-            <NavIcon icon={EmployeeIcon} altText="Employee" />
+            {/* <NavIcon icon={EmployeeIcon} altText="Employee" /> */}
             <h2 className={styles.menuListTitle}> Employees</h2>{" "}
           </li>
           <li>
