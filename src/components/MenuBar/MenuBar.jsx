@@ -3,7 +3,7 @@ import CompanyLogo from "../../assets/company-logo.png";
 import NavIcon from "../NavIcon/NavIcon";
 import DashboardIcon from "../../assets/Dashboard-icon.svg";
 import RecruitmentIcon from "../../assets/Recruitment-icon.svg";
-import ScheduleIcon from "../../assets/Schedule-icon.svg";
+import ScheduleIcon from "src/assets/Schedule-icon.svg";
 import EmployeeIcon from "../../assets/Employee-icon.svg";
 import DepartmentIcon from "../../assets/Department-icon.svg";
 import SupportIcon from "../../assets/Support-icon.svg";
