@@ -113,6 +113,14 @@ const AnnouncementCard = ({ announcements }) => (
 );
 
 
+AnnouncementCard.propTypes = {
+  announcements: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      time: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 
 
@@ -145,7 +153,14 @@ const ScheduleCard = ({ schedule }) => (
   </div>
 );
 
-
+ScheduleCard.propTypes = {
+  schedule: PropTypes.arrayOf(
+    PropTypes.shape({
+      task: PropTypes.string.isRequired,
+      time: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 
 
@@ -168,6 +183,10 @@ const RecentActivityCard = ({ RecentActivityTime, todaysActivity }) => (
   </div>
 );
 
+RecentActivityCard.propTypes = {
+  RecentActivityTime: PropTypes.string.isRequired,
+  todaysActivity: PropTypes.number.isRequired,
+};
 
 
 

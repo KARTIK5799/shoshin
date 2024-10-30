@@ -1,14 +1,15 @@
 import styles from "./MenuBar.module.css";
+import PropTypes from 'prop-types';
 import CompanyLogo from "../../assets/company-logo.png";
 import NavIcon from "../NavIcon/NavIcon";
-import DashboardIcon from "src/assets/Dashboard-icon.svg";
-import RecruitmentIcon from "src/assets/Recruitment-icon.svg";
-import ScheduleIcon from "src/assets/Schedule-icon.svg";
-import EmployeeIcon from "src/assets/Employee-icon.svg";
-import DepartmentIcon from "src/assets/Department-icon.svg";
-import SupportIcon from "src/assets/Support-icon.svg";
-import SettingsIcon from "src/assets/Setting-icon.svg";
-import TabCompanyLogo from 'src/assets/tab-logo.png'
+import DashboardIcon from "../../assets/dashboardIcon.svg";
+import RecruitmentIcon from "../../assets/recruitmentIcon.svg";
+import ScheduleIcon from "../../assets/scheduleIcon.svg";
+import EmployeeIcon from "../../assets/employeeIcon.svg";
+import DepartmentIcon from "../../assets/departmentIcon.svg";
+import SupportIcon from "../../assets/supportIcon.svg";
+import SettingsIcon from "../../assets/settingIcon.svg";
+import TabCompanyLogo from '../../assets/tab-logo.png';
 
 
 const MenuBar = ({toggleMenu}) => {
@@ -63,6 +64,10 @@ const MenuBar = ({toggleMenu}) => {
       </div>
     </div>
   );
+};
+
+MenuBar.propTypes = {
+  toggleMenu: PropTypes.func.isRequired, 
 };
 
 export default MenuBar;
